@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+           New Leap Initiative
+        </title>
+       <style>
+      html { 
+        background: url(night.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color:  rgb(56, 50, 50);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(238, 211, 211);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:#ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: black;
+}
+       h1{color:white;}
+       h2{color:white;}
+       table.center{margin-left: auto;
+       margin-right: auto;}
+       </style>
+    </head>
+
+    <body>
+        <!--<marquee>NLI. Student Satellite Club. K. J. Somaiya Institute of Engineering and IT, Sion</marquee>-->
+    </br>
+
+    <h1 align="center">New Leap Initiative</h1>               
+    <h2 color="red" align="center">Official Team Website</h2>
+
+    <table class="center">
+        <tr align="center">
+            <td>
+                <div class="tab">
+                    <button class="tablinks" onclick="clickfunc()">Home</button></a>
+                    <button class="tablinks" onclick="clickfunc()">FAQs</button></a>
+                    <button class="tablinks" onclick="clickfunc()">About Us</button></a>
+                    <button class="tablinks" onclick="clickfunc()">Contact Us</button></a>
+                    <p id='hi'></p>
+
+                    
+                </div>
+                <script >
+                    function clickfunc(){
+                        document.getElementById('hi').innerhtml="hello there. this is home. home sweet home. how are you?";
+                    }
+                    </script>
+            </td>
+        </tr>
+    </table>
+
+    
+    
+    
+    
+</body>
+</html>
