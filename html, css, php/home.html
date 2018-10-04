@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>New Leap Initiative</title>
+        <style>
+            /*add styles here*/
+        </style>
+    </head>
+
+    <body>
+        <div style="background-color:black" class="a">
+            <table align="center">    
+                
+                    <tr>
+                            <th>..........</th>
+                            <th>..........</th>
+                        <th><img src="NLI logo.jpeg" align="left-top" height="80" width="80"></th>
+                        <th><h1 style="text-align:center; color:white">New Leap Initiative</h1></th>
+                    </tr>
+                    <tr>
+                        <th>..........</th>
+                        <th>..........</th>
+                        <th>..........</th>
+                        <th>......</th>
+                        <th><h2 style="color:white"> We Believe.. </h2></th>
+                    </tr>      
+
+                    <tr>
+                        <th>..........</th>        
+                    </tr>
+
+                </table>
+        </div>
+
+        <div align="center" style="background-color: lightslategrey">
+            <b>Our Motto</b>
+            <!--<i>373 miles to reach promises to keep before we go to sleep..</i>-->
+             <div>
+            <button align="center" onclick="loadnew()" style="background-color: plum; color: brown">Click Here to Enter the Mystic World</button>
+        </div>
+        </div>
+
+       
+
+        <script type="text/javascript">
+            function loadnew(){
+
+            var hajax=new XMLHttpRequest();
+            hajax.onreadyStateChange=function(){
+                if((this.readyState == 4 && this.status == 200))
+                {
+                    document.getElementById('motto').innerHTML=this.responseText;
+                }
+            };
+            hajax.open("GET", "motto.txt", true);
+            hajax.send();
+
+        };
+        </script>
+
+    </body>
+</html>
